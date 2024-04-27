@@ -3,20 +3,58 @@
     <head>
         <meta charset=utf-8>
         <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
-        <title>Emscripten-Generated Code</title>
+        <title>Omer calendar</title>
         <style>
-            body {
+            @font-face {
+                font-family: RadioCanada;
+                src: url("../res/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf");
+                font-family: Arvo;
+                src: url("../res/Arvo/Arvo-Regular.ttf");
+            }
+
+            body, body * {
                 margin: 0;
-                padding: none;
+                padding: 0;
+                overflow-x: hidden;
+                font-family: RadioCanada;
             }
 
             #main {
+                width: 100vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 100vw;
+                background-color:lightseagreen;
+            }
+
+            #program {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
                 height: 100vh;
                 background-color:aquamarine;
+            }
+
+            #information {
+                width: 50%;
+                margin: auto;
+                /* background-color:blue; */
+                color:white;
+            }
+
+            #information > * {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            #information h1 {
+                font-size: 2em;
+            }
+
+            #information p {
+                font-size: 1.2em;
+                line-height: 1.2em;
             }
 
             .emscripten {
@@ -73,26 +111,47 @@
 
     <body>
         <main id="main">
-            <!-- <a href=http://emscripten.org>em</a> -->
-            <div class=spinner id=spinner></div>
-            <div class=emscripten id=status>Downloading...</div>
-            <!-- <span id=controls>
-                <span>
-                    <input type=checkbox id=resize>Resize canvas
-                </span>
-                <span>
-                    <input type=checkbox id=pointerLock checked>Lock/hide mouse pointer    
-                </span>
-                <span>
-                    <input type=button onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)' value=Fullscreen>
-                </span>
-            </span> -->
-            <div class=emscripten><progress hidden id=progress max=100 value=0></progress></div>
-            <div class=emscripten_border>
-                <canvas class=emscripten id=canvas oncontextmenu=event.preventDefault() tabindex=-1>
-                </canvas>
-            </div>
-            <!-- <textarea id=output rows=8></textarea> -->
+            <section id="program">
+                <!-- <a href=http://emscripten.org>em</a> -->
+                <div class=spinner id=spinner></div>
+                <div class=emscripten id=status>Downloading...</div>
+                <!-- <span id=controls>
+                    <span>
+                        <input type=checkbox id=resize>Resize canvas
+                    </span>
+                    <span>
+                        <input type=checkbox id=pointerLock checked>Lock/hide mouse pointer    
+                    </span>
+                    <span>
+                        <input type=button onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked,document.getElementById("resize").checked)' value=Fullscreen>
+                    </span>
+                </span> -->
+                <div class=emscripten><progress hidden id=progress max=100 value=0></progress></div>
+                <div class=emscripten_border>
+                    <canvas class=emscripten id=canvas oncontextmenu=event.preventDefault() tabindex=-1>
+                    </canvas>
+                </div>
+                <!-- <textarea id=output rows=8></textarea> -->
+            </section>
+            <section id="information">
+                <h1>Information</h1>
+                <p>
+                    This is a homemade thing so sorry if it's buggy or doesn't work on your system!
+                    <br><br>
+                    This program works like an advent calendar. Behind each door will be a small, Christian themed drawing. Clicking today's door will open it.
+                    <br><br>
+                    I have not tested this on any machine other than my own Windows laptop. On other devices - especially high resolution ones - the scaling may be too small. I haven't tried it on an ipad, no idea how well it works there. I highly doubt it will work correctly on mobile.
+                    <br><br>
+                    The calendar assumes sundown is at 7:30 in your local timezone. This is not exact, but it will probably be reasonably close.
+                    <br><br>
+                    If you miss a day, nothing happens. It will just open the door on it's own.
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    Oh yes... You might wonder "what happens after day 25?" You'll have to wait and see...
+                    <br><br>
+                </p>
+            </section>
         </main>
         <script>
             var statusElement = document.getElementById("status"), progressElement = document.getElementById("progress"), spinnerElement = document.getElementById("spinner"), Module = {

@@ -10,9 +10,9 @@ let bridge_img;
 let image_offset;
 
 function preload() {
-	bg_img = loadImage("../res/img/background.png");
-	train_img = loadImage("../res/img/train.png");
-	bridge_img = loadImage("../res/img/bridge.png");
+	bg_img = loadImage("res/img/background.png");
+	train_img = loadImage("res/img/train.png");
+	bridge_img = loadImage("res/img/bridge.png");
 }
 
 function set_things() {

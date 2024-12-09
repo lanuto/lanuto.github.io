@@ -136,7 +136,6 @@ html {
         html body #main .zone .island {
           background-color: white;
           margin: auto;
-          overflow-y: scroll;
           outline: 2px solid #323c5a; }
           html body #main .zone .island img {
             width: 50%;
@@ -185,6 +184,7 @@ html {
       height: calc(75% - 10px) !important;
       margin: calc((100vh - (75% - 10px)) - 50vh) auto;
       box-shadow: none !important;
-      transition: 0.4s; } }
+      transition: 0.4s;
+      overflow-y: scroll; } }
 
 /*# sourceMappingURL=rules.css.map */

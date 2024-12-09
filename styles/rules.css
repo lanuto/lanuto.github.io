@@ -1,108 +1,190 @@
 @font-face {
-    font-family: RadioCanada;
-    /* src: url("../res/font/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf"); */
-    src: url("../res/font/Radio_Canada/static/RadioCanada/RadioCanada-Regular.ttf");
-    font-family: Arvo;
-    src: url("../res/font/Arvo/Arvo-Regular.ttf");
-}
-
-body {
+  font-family: RadioCanada;
+  src: url("res/font/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf");
+  font-family: Arvo;
+  src: url("res/font/Arvo/Arvo-Regular.ttf"); }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+  html body {
     margin: 0;
     padding: 0;
-    font-family: Arvo, monospace;
-    /* font-family: RadioCanada, sans-serif; */
-    font-size: 1.2em;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-    cursor: pointer;
-}
-
-#main {
-    position: absolute;
-    background-color: #3CF;
-}
-
-#main > * {
-    width: 60%;
-    margin: 10vw auto;
-	box-shadow: #000 10px 10px;
-}
-
-.title {
-	color: white;
-    height: 20vw;
-	background-color: #05F;
-	outline: 2px solid #000;
-	font-variant: small-caps;
-	font-size: 1.6em;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-
-}
-
-.post {
-    /* width: 60%; */
-    outline: 2px solid #111;
-    background-color: #FFF;
-    color: #333;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    padding: 4% 0;
-}
-
-.post:first-child {
-    /* margin-top: 24px !important; */
-}
-
-.post:last-child {
-    /* margin-bottom: 24px !important; */
-}
-
-.post > * {
-    width: 70%;
-    margin: 5px auto;
-}
-
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
-	/* font-variant: small-caps; */
-	/* color: #0BE; */
-}
-
-.post h1 { font-size: 2.4em; }
-.post h2 { font-size: 1.8em; }
-.post h3 { font-size: 1.6em; }
-.post h4 { font-size: 1.4em; }
-.post p  { font-size: 1.1em; }
-
-.post em {
-    /* color: #FFF; */
-    /* background-color: #4FB; */
-    /* outline: 1px solid #225; */
-    /* outline: 1px solid #FFF; */
-    font-style: normal;
-}
+    font-family: RadioCanada, sans-serif;
+    background-image: url("res/great_wave.jpeg");
+    background-size: cover;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden; }
+    html body a {
+      color: inherit;
+      text-decoration: inherit;
+      cursor: pointer; }
+    html body li {
+      list-style: none; }
+    html body img {
+      max-width: 100%; }
+    html body p, html body li {
+      font-size: 1.2em; }
+    html body h1 {
+      border-bottom: 2px solid #05A; }
+    html body form * {
+      min-width: 60%;
+      outline: 1px solid #05A;
+      font-size: 1em;
+      font-family: "Arvo", monospace;
+      border: none;
+      padding: none;
+      margin-left: 10px; }
+    html body form label {
+      outline: none;
+      text-decoration: underline;
+      display: inline-block; }
+    html body form input, html body form textarea {
+      margin-bottom: 10px; }
+    html body form input {
+      display: block; }
+    html body form textarea {
+      resize: none;
+      width: 80%;
+      height: 20vh;
+      font-size: 1em; }
+    html body form input[type=submit] {
+      background-color: black;
+      color: white;
+      width: 100px;
+      min-width: 0;
+      outline: 2px solid #05A; }
+    html body form input[type=submit]:hover {
+      background-color: white;
+      cursor: pointer;
+      color: black; }
+    html body .emscripten {
+      position: fixed;
+      top: 0;
+      z-index: -10; }
+    html body canvas.emscripten {
+      width: 100vw;
+      height: 100vh; }
+    html body #status {
+      display: none; }
+    html body #spinner {
+      display: none; }
+    html body #menu {
+      display: flex;
+      flex-direction: row;
+      height: 5vh;
+      top: 95vh;
+      text-align: center;
+      position: fixed;
+      width: 100vw;
+      outline: 1px solid black;
+      font-family: "Arvo", monospace;
+      background-color: #323cc8; }
+      html body #menu #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%; }
+      html body #menu #hamburger {
+        display: none; }
+      html body #menu a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black; }
+      html body #menu a:hover {
+        color: white; }
+    html body #main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 400vw;
+      height: 95vh;
+      font-family: "Arvo", monospace; }
+      html body #main #intro > .island {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 5px 5px #88e; }
+        html body #main #intro > .island h1 {
+          border: none;
+          font-size: 5vh; }
+      html body #main #about > .island {
+        width: 130vh;
+        height: 80vh; }
+      html body #main #web-design > .island {
+        width: 75vh;
+        height: 75%; }
+      html body #main #contact > .island {
+        width: 110vh;
+        height: 70vh; }
+      html body #main #arcade > .island {
+        width: 88vh;
+        height: 66vh; }
+      html body #main h1 {
+        font-size: 2.4em;
+        color: #05A; }
+      html body #main .zone {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        html body #main .zone .island {
+          background-color: white;
+          margin: auto;
+          overflow-y: scroll;
+          outline: 2px solid #323c5a; }
+          html body #main .zone .island img {
+            width: 50%;
+            outline: 2px solid #224;
+            height: auto; }
+        html body #main .zone .island > * {
+          margin: 16px; }
+      html body #main #arcade > .island {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        html body #main #arcade > .island #arcade-grid {
+          width: 55vh;
+          height: 55vh;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 25vh 25vh;
+          grid-template-rows: 25vh 25vh;
+          column-gap: 5vh;
+          row-gap: 5vh; }
+          html body #main #arcade > .island #arcade-grid .arcade-link {
+            filter: grayscale(0); }
+          html body #main #arcade > .island #arcade-grid .arcade-link:hover {
+            filter: grayscale(100%); }
 
 @media screen and (max-width: 992px) {
-    #main > * {
-        margin: 10vh 0;
-        width: 100%;
-        box-shadow: none;
-    }
+  html body #menu {
+    flex-direction: column;
+    height: 5vh;
+    top: 95vh; }
+    html body #menu #hamburger {
+      display: block;
+      height: 4vh; }
+    html body #menu #links {
+      display: none;
+      flex-direction: column; }
+    html body #menu a {
+      margin-left: 14%;
+      margin-right: 14%; }
+  html body #main h1 {
+    font-size: 2.0em; }
+  html body #main .zone {
+    justify-content: flex-start !important; }
+    html body #main .zone .island {
+      width: calc(100% - 10px) !important;
+      height: calc(75% - 10px) !important;
+      margin: calc((100vh - (75% - 10px)) - 50vh) auto;
+      box-shadow: none !important;
+      transition: 0.4s; } }
 
-    .title {
-        font-size: 1.4em;
-        height: 30vh;
-    }
-}
+/*# sourceMappingURL=rules.css.map */

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: RadioCanada;
+    /* src: url("../res/font/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf"); */
+    src: url("../res/font/Radio_Canada/static/RadioCanada/RadioCanada-Regular.ttf");
+    font-family: Arvo;
+    src: url("../res/font/Arvo/Arvo-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arvo, monospace;
+    /* font-family: RadioCanada, sans-serif; */
+    font-size: 1.2em;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+#main {
+    position: absolute;
+    background-color: #3CF;
+}
+
+#main > * {
+    width: 60%;
+    margin: 10vw auto;
+	box-shadow: #000 10px 10px;
+}
+
+.title {
+	color: white;
+    height: 20vw;
+	background-color: #05F;
+	outline: 2px solid #000;
+	font-variant: small-caps;
+	font-size: 1.6em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+}
+
+.post {
+    /* width: 60%; */
+    outline: 2px solid #111;
+    background-color: #FFF;
+    color: #333;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 4% 0;
+}
+
+.post:first-child {
+    /* margin-top: 24px !important; */
+}
+
+.post:last-child {
+    /* margin-bottom: 24px !important; */
+}
+
+.post > * {
+    width: 70%;
+    margin: 5px auto;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+	/* font-variant: small-caps; */
+	/* color: #0BE; */
+}
+
+.post h1 { font-size: 2.4em; }
+.post h2 { font-size: 1.8em; }
+.post h3 { font-size: 1.6em; }
+.post h4 { font-size: 1.4em; }
+.post p  { font-size: 1.1em; }
+
+.post em {
+    /* color: #FFF; */
+    /* background-color: #4FB; */
+    /* outline: 1px solid #225; */
+    /* outline: 1px solid #FFF; */
+    font-style: normal;
+}
+
+@media screen and (max-width: 992px) {
+    #main > * {
+        margin: 10vh 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .title {
+        font-size: 1.4em;
+        height: 30vh;
+    }
+}

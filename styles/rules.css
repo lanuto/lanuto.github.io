@@ -1,3 +1,9 @@
+::-webkit-scrollbar {
+  width: 7px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: blue; }
+
 @font-face {
   font-family: RadioCanada;
   src: url("res/font/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf");
@@ -24,7 +30,7 @@ html {
     html body img {
       max-width: 100%; }
     html body p, html body li {
-      font-size: 1.2em; }
+      font-size: 1.5em; }
     html body h1 {
       border-bottom: 2px solid #05A; }
     html body form * {
@@ -79,6 +85,7 @@ html {
       width: 100vw;
       outline: 1px solid black;
       font-family: "Arvo", monospace;
+      font-size: 1.2em;
       background-color: #323cc8; }
       html body #menu #links {
         display: flex;
@@ -113,11 +120,11 @@ html {
           border: none;
           font-size: 5vh; }
       html body #main #about > .island {
+        width: 75vh;
+        height: 75vh; }
+      html body #main #web-design > .island {
         width: 130vh;
         height: 80vh; }
-      html body #main #web-design > .island {
-        width: 75vh;
-        height: 75%; }
       html body #main #contact > .island {
         width: 110vh;
         height: 70vh; }
@@ -136,7 +143,12 @@ html {
         html body #main .zone .island {
           background-color: white;
           margin: auto;
-          outline: 2px solid #323c5a; }
+          max-width: 80vw;
+          max-height: 80vh;
+          outline: 2px solid #323c5a;
+          overflow-y: scroll; }
+          html body #main .zone .island li {
+            list-style: square; }
           html body #main .zone .island img {
             width: 50%;
             outline: 2px solid #224;
@@ -161,7 +173,7 @@ html {
           html body #main #arcade > .island #arcade-grid .arcade-link:hover {
             filter: grayscale(100%); }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
   html body #menu {
     flex-direction: column;
     height: 5vh;
@@ -177,6 +189,8 @@ html {
       margin-right: 14%; }
   html body #main h1 {
     font-size: 2.0em; }
+  html body #main #intro > .island h1 {
+    font-size: 4.8vh; }
   html body #main .zone {
     justify-content: flex-start !important; }
     html body #main .zone .island {
@@ -184,7 +198,6 @@ html {
       height: calc(75% - 10px) !important;
       margin: calc((100vh - (75% - 10px)) - 50vh) auto;
       box-shadow: none !important;
-      transition: 0.4s;
-      overflow-y: scroll; } }
+      transition: 0.4s; } }
 
 /*# sourceMappingURL=rules.css.map */

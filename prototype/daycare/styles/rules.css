@@ -286,6 +286,10 @@ p, li {
     outline: 4px solid #F51;
 }
 
+#rg1 { rotate:  1.6deg; }
+#rg2 { rotate: -0.9deg; }
+#rg3 { rotate:  2.1deg; }
+
 #rooms-grid {
     display: flex;
     flex-direction: row;

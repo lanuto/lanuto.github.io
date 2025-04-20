@@ -2,18 +2,20 @@
 :root {
     --bc: #4C69FF;
 }
-
+/*
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #CCF;
+    background-color: #F6E392;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: blue;
-}
+    background-color: #F4C84E;
+    border-radius: 6px;
+}*/
 
 @font-face {
     font-family: "Jua";
@@ -59,8 +61,7 @@ a {
     text-decoration: inherit;
 }
 
-a:hover {
-    cursor: pointer;
+a:hover `    cursor: pointer;
 }
 
 ul, ol {
@@ -74,6 +75,8 @@ ul, ol {
     z-index: -10;
     width: calc(150vh / 9 * 16);
     height: 150vh;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #content {
@@ -131,8 +134,8 @@ ul, ol {
 
 
 .zone {
-/*    width: 100vw;
-    height: 100vh;*/
+    width: 100vw;
+    height: 100vh;
 /*    outline: 2px solid blue;*/
     padding-top: 9vh;
 
@@ -140,6 +143,7 @@ ul, ol {
     flex-direction: column;
     justify-content: space-evenly;
 
+    overflow-x: hidden;
 /*    overflow-y: scroll;*/
 }
 

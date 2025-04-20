@@ -111,6 +111,8 @@ html {
 #contact-info > div {
     width: 90vw;
     height: 60vw;
-    margin: 4vw auto;
+    margin-top: 4vw;
+    margin-left: 2.5vw;
+/*    margin: 4vw auto;*/
 }
 }

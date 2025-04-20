@@ -382,6 +382,8 @@ input[type=submit] {
     width: 100px;
     height: 60px;
     background-image: url("../../assets/img/send.png");
+    background-size: cover;
+    background-position: center;
 /*    outline: none;*/
     color: white;
 }

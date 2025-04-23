@@ -1,6 +1,4 @@
 
-let bg;
-
 let points = [];
 let pr = [];
 let tints = [];
@@ -17,6 +15,8 @@ let splatterCount;
 let nh = 0;
 
 let canvas;
+
+let paint;
 
 // const VISIBLE = 0, FADE_OUT = 1, HIDDEN = 2, FADE_IN = 3;
 // let state = VISIBLE;

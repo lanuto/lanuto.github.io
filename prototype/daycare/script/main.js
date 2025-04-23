@@ -27,7 +27,7 @@ let paint;
 
 function preload() {
     // paint = loadImage("../assets/img/paint_splatters.png");
-    paint = loadImage("paint_splatters.png");
+    paint = loadImage("script/paint_splatters.png");
 }
 
 function deviceTurned() {

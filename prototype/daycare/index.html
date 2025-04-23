@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Achieve Milestones Daycare">
 
+    <title>Achieve Milestones Daycare</title>
+
+    <link href="styles/rules.css" type="text/css" rel="stylesheet">
+    <link href="styles/phone.css" type="text/css" rel="stylesheet">
+
+    <link href="assets/img/favicon.ico" type="image/x-icon" rel="icon">
+
+    <script src="lib/p5/p5.min.js"></script>
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <!-- <img id="bg" src="assets/img/bg4.png"> -->
+    <nav id="main-menu">
+        <a id="hamburger" href="javascript:void(0);" onclick="toggle_menu()">Show Menu</a>
+        <div id="links">
+            
+<!--             <a href="#welcome"    id="l1" onclick="hide_menu()">Welcome</a>
+            <a href="#who-we-are" id="l2" onclick="hide_menu()">About</a>
+            <a href="#programs"   id="l3" onclick="hide_menu()">Programs</a>
+            <a href="#services"   id="l4" onclick="hide_menu()">Services</a>
+            <a href="#contact"    id="l5" onclick="hide_menu()">Contact</a>
+ -->
+
+            <a href="#welcome"    id="l1">Welcome</a>
+            <a href="#who-we-are" id="l2">About</a>
+            <a href="#programs"   id="l3">Programs</a>
+            <!-- <a href="#services"   id="l4">Services</a> -->
+            <a href="#contact"    id="l5">Contact</a> 
+        </div>
+    </nav>
+<!--     <main>
+        <canvas id="defaultCanvas0" class="p5Canvas" style="width: 100vw; height: 100vh;"></canvas>
+    </main> -->
+    <div id="content">
+        <div class="zone" id="welcome">
+            <section id="top" class="page-segment">
+                <img src="assets/img/logo.png" id="logo">
+    <!--             <picture id="logo">
+                    <source srcset="assets/img/logo2.webp" type="image/webp">
+                    <source srcset="assets/img/logo2.png" type="image/png">
+                    <img src="assets/img/logo2.png">
+                </picture> -->
+
+    <!--             <div>
+                    <h1>Achieve Milestones Daycare</h1>
+                    <h2>Childcare & Early Learning Center LLC</h2>
+                </div> -->
+            </section>
+        </div>
+        <div class="zone" id="who-we-are">
+            <section class="page-segment">
+                <h3>Meet Our Founder: Shardae Hepburn</h3>
+                <div class="paint-img" id="founder-photo">
+                    <!-- <img src="assets/img/photos/3.webp" alt="Picture of Shardae Hepburn"> -->
+                    <img src="assets/img/photos/3.png" alt="Picture of Shardae Hepburn">
+                </div>
+                <p>
+                Shardae is the passionate founder and director of Achieve Milestones Childcare LLC. Originally from Kingston, Jamaica, she brings a rich cultural heritage and deep appreciation for community-driven education. Growing up, she witnessed firsthand the impact that a nurturing, high-quality learning environment can have on a child's development, inspiring her to dedicate her career to early childhood education.
+                </p>
+            </section>
+            <section class="page-segment">
+                <p>
+                Shardae is an honors student, a proud member of Phi Theta Kappa Society (PTK), and serves as the president of her college's Early Childhood Education Club. In these roles, she actively advocates excellence in early learning and supports future educators in their professional growth. She believes that every child deserves an environment where they feel safe, valued, and encouraged to explore their potential.
+                </p>
+                <br>
+                <p>
+                Her teaching philosophy is rooted in play-based, hands-on learning that fosters social-emotional growth, cognitive development, and school readiness. Through Achieve Milestones Childcare, she is committed to providing developmentally appropriate experiences that cater to the unique needs of each child, ensuring they build a strong foundation for lifelong learning.
+                </p>
+                <br>
+                <p>
+                Shardae's journey has been shaped by inspiring mentors, such as her former professor Kellyn Jeremy, whose belief in her potential fueled her drive to succeed.
+                </p>
+                <br>
+                <p>
+                Now, as an educator and advocate, she hopes to be that same source of encouragement for young learners, helping them achieve their milestones, one step at a time.
+                </p>
+                <br>
+                <p>
+                Her vision for Achieve Milestones Childcare is simple yet profound: to create a space where children not only learn but also feel empowered, confident, and excited about their future.
+                </p>
+<!--                 <h3>Who we are</h3>
+                <p>
+                    At Achieve Milestones, we believe that every child deserves a safe, nurturing, and stimulating environment where they can learn, grow, and thrive. Our mission is to provide high quality early childhood education that fosters curiosity, creativity, and confidence in young leaders.
+                </p>
+                <br>
+                <p>
+                    With a focus on individualized care, we recognize that every child develops at their own pace. Our dedication team creates hands on learning experiences that encourage exploration and problem-solving while building foundational skills for lifelong success.
+                </p>
+                <br>
+                <h3>Our approach</h3>
+                <p>
+                    Our experienced, passionate educators are dedicated to providing personalized care and support, working closely with families to create a strong partnership in every child's journey. Together, we help children develop the skills they need to succeed and foster a lifelong love of learning.
+                </p>
+ -->            
+            </section>
+
+<!--             <section id="rooms" class="page-segment">
+                <h3>Rooms</h3>
+                <section id="rooms-grid">
+                    <div id="rg1">
+                        <h3>Infants</h3>
+                        <p>[Description]</p>
+                    </div>
+                    <div id="rg2">
+                        <h3>Toddlers</h3>
+                        <p>[Description]</p>
+                    </div>
+                    <div id="rg3">
+                        <h3>Preschool</h3>
+                        <p>[Description]</p>
+                    </div>
+                </section>
+            </section> -->
+        </div>
+        <div class="zone" id="programs">
+            <section id="activities" class="page-segment">
+                <div class="page-row">
+                    <div>
+                        <h3>Our Services</h3>
+                        <p>
+                            We offer a variety of programs tailored to meet the needs of infants, toddlers, and preschoolers, helping them achieve their milestone with confidence.
+                        </p>
+                    </div>
+                    <table id="service-table">
+                        <tr>
+                            <th>Service</th>
+                            <th>Who it's for</th>
+                        </tr>
+                        <tr>
+                            <td>Infant care</td>
+                            <td>6 weeks to 12 months</td>
+                        </tr>
+                        <tr>
+                            <td>Toddler program</td>
+                            <td>1 to 3 years</td>
+                        </tr>
+                        <tr>
+                            <td>Preschool program</td>
+                            <td>3 to 5 years</td>
+                        </tr>
+                        <tr>
+                            <td>Before and after care</td>
+                            <td>School age</td>
+                        </tr>
+                        <tr>
+                            <td>Healthy meals, snacks, and enrichment activities</td>
+                            <td>Everyone</td>
+                        </tr>
+                    </table>
+                </div>
+                <section id="activities-grid">
+<!--                     
+                    <div class="paint-img" id="activities-grid-p1"><img src="assets/img/photos/1.webp" alt="Photo of boy looking upwards."></div>
+                    <div class="paint-img" id="activities-grid-p2"><img src="assets/img/photos/2.webp" alt="Photo of a girl smiling."></div>
+                    <div class="paint-img" id="activities-grid-p3"><img src="assets/img/photos/4.webp" alt="Photo of boy with a train puzzle."></div>
+                    <div class="paint-img" id="activities-grid-p4"><img src="assets/img/photos/5.webp" alt="Photo of a boy facing the camera."></div>
+ -->                
+                    <div class="paint-img" id="activities-grid-p1"><img src="assets/img/photos/1.png" alt="Photo of boy looking upwards."></div>
+                    <div class="paint-img" id="activities-grid-p2"><img src="assets/img/photos/2.png" alt="Photo of a girl smiling."></div>
+                    <div class="paint-img" id="activities-grid-p3"><img src="assets/img/photos/4.png" alt="Photo of boy with a train puzzle."></div>
+                    <div class="paint-img" id="activities-grid-p4"><img src="assets/img/photos/5.png" alt="Photo of a boy facing the camera."></div>
+                </section>
+            </section>
+        </div>
+<!--         <div class="zone" id="services">
+        </div> -->
+        <div class="zone" id="contact">
+            <section id="contact-form-area">
+                <h3>Reach Out to Us</h3>
+                <form id="contact-form" action="..." method="POST">
+                    <input type="hidden" name="access_key" value="...">
+                    <input type="hidden" name="from_name" value="...">
+                    <input type="checkbox" name="botcheck" style="display: none">
+
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                    <label>Subject</label>
+                    <input type="text" name="subject" required>
+                    <label>Phone (optional)</label>
+                    <input type="tel" name="phone">
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+            <section id="contact-info">
+                <div id="contact-info-left">
+                    <h3>Opening Times</h3>
+                    <p>
+                        Daycare<br>
+                        Mon-Fri<br>
+                        7AM-7PM
+                    </p>
+                </div>
+                <div id="contact-info-right">
+                    <h3>Visit Us</h3>
+                    <p>
+                        35 Whittier St.<br>
+                        Bridgeport, Ct 06605<br>
+                        achievemilestones@outlook.com<br>
+                        Tel: 203 243 2136
+                    </p>
+                </div>
+            </section>
+            <!-- <a id="toggle-form" href="javascript:void(0);" onclick="toggle_form()">See Email Form</a> -->
+            <!-- <a id="toggle-form" href="#form">See Email Form</a> -->
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    window.onorientationchange = function() {
+        window.location.reload();
+    }
+
+    const links     = document.getElementById("links");
+    const hamburger = document.getElementById("hamburger");
+    const menu      = document.getElementById("main-menu");
+
+    function hide_menu() {
+        links.style.display = "none";
+        // menu.style.position = "fixed";
+        // menu.style.top = "95vh";
+        // menu.style.height = "10vh";
+        hamburger.innerText = "Show Menu";
+
+        menu.style.height = "7vh";
+        links.style.opacity = "0";
+
+        // menu.style.color = "0";
+        menu.style.fontSize = "2em";
+    }
+
+    function toggle_menu() {
+        if (links.style.display === "flex") {
+            hide_menu();
+        } else {
+            links.style.display = "flex";
+            // menu.style.position = "absolute";
+            // menu.style.top = "0";
+            // menu.style.left = "0";
+            hamburger.innerText = "Hide Menu";
+
+            menu.style.height = "50vh";
+            // menu.style.color = "red";
+            links.style.opacity = "1";
+            menu.style.fontSize = "2.4em";
+        }
+    }
+
+    // menu.addEventListener("transitionend",  function (event) {
+        
+    // }, false);
+
+    function toggle_form() {
+        const form = document.getElementById("contact-form-area");
+        const info = document.getElementById("contact-info");
+
+        if (form.style.display === "none") {
+            form.style.display = "block";
+            info.style.display = "none";
+        } else {
+            form.style.display = "none";
+            info.style.display = "flex";
+        }
+    }
+
+</script>

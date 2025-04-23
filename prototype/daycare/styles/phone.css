@@ -1,0 +1,160 @@
+
+@media screen and (max-width: 600px) {
+#main-menu {
+    flex-direction: column;
+    top: 0;
+    padding-top: 15px;
+    justify-content: space-between;
+/*    height: 10vh;*/
+/*    width: 96vw;*/
+    transition: height 0.3s, color 0.5s, font-size 0.2s;
+/*    transition: color 0.5s;*/
+}
+
+#hamburger {
+    display: block;
+    width: 100%;
+    height: 7vh;
+/*    height: 100%;*/
+}
+
+#links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+/*    background-color: yellow;*/
+    opacity: 1;
+/*    transition: font-size 5s;*/
+/*    color: none;*/
+/*    font-size: 0.5em;*/
+}
+
+#links a {
+    height: 7vh;
+}
+
+#contact-info {
+    flex-direction: column;
+}
+
+#contact-info > div {
+    width: 90vw;
+/*    height: 60vw;*/
+    height: 90vw;
+    margin-top: 4vw;
+    margin-left: 2.5vw;
+/*    margin: 4vw auto;*/
+}
+}
+
+@media screen and (max-width: 1080px) {
+html {
+/*    scroll-behavior: auto;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#content {
+/*    width: 96vw;
+    margin: 0 2vw;*/
+/*    display: flex;*/
+/*    flex-direction: row;
+    width: 500vw;*/
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+
+.zone {
+    width: 100vw;
+/*    height: 90vh;*/
+    height: auto;
+    margin-top: 10vh;
+/*    background-color: red;;*/
+    display: block;
+    overflow-y: auto;
+
+    position: static;
+}
+
+.page-segment {
+/*    margin-bottom: 10vh;*/
+/*    margin-top: 6vh;*/
+    width: 98vw;
+    margin-left: 1vw;
+}
+
+.page-row {
+    flex-direction: column;
+    height: auto;
+}
+
+#top {
+    height: auto;
+}
+
+#logo {
+    /*    max-width: 90vw;*/
+/*    width: 90vw;*/
+}
+
+/*#who-we-are {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+*/
+#rooms-grid {
+/*    flex-direction: column;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#rooms-grid > div {
+    width: 30vw;
+    height: 20vw;
+}
+
+#activities-grid {
+/*    flex-direction: column;*/
+}
+
+#activities-grid div {
+/*  width: 30%;
+    height: 24vw;
+*/  
+    width: 46vw;
+    height: 26vw;
+}
+
+#founder-photo {
+/*    width: 40vw;*/
+    width: 90vw;
+    height: 60vw;
+}
+
+/*#toggle-form {
+    display: block;
+}
+
+#contact-form-area {
+    display: none;
+}*/
+
+#contact {
+    display: block;
+/*    flex-direction: column;*/
+}
+
+#contact-info {
+    flex-direction: row;
+    width: 100%;
+}
+
+#contact-info > div {
+    width: 40vw;
+    height: 40vw;
+}
+}

@@ -312,7 +312,7 @@ p, li {
 
     border: 50px solid transparent;
 /*    border-image: url("../assets/img/send.png") 30 stretch;*/
-    border-image: url("../assets/img/border1.png") 300 stretch;
+    border-image: url("../assets/img/border1.png") 200 stretch;
 }
 
 #rg1 { rotate:  1.6deg; }

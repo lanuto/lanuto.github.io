@@ -303,12 +303,12 @@ p, li {
 }
 
 #logo {
-    max-width: 80vw;
+    max-width: 60vw;
     width: 744px;
 /*    height: 200px;*/
     margin: auto;
 /*    border: 4px solid #FA7;*/
-/*    outline: 4px solid #F51;*/
+    outline: 4px solid #F51;
 
 /*    border: 50px solid transparent;*/
 /*    border-image: url("../assets/img/send.png") 30 stretch;*/

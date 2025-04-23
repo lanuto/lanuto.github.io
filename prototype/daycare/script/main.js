@@ -25,9 +25,9 @@ let paint;
 //     state = FADE_OUT;
 // }
 
-function preload() {    
-    // bg = loadImage("../assets/img/bg4.png");
-    paint = loadImage("../assets/img/paint_splatters.png");
+function preload() {
+    // paint = loadImage("../assets/img/paint_splatters.png");
+    paint = loadImage("paint_splatters.png");
 }
 
 function deviceTurned() {

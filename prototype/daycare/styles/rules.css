@@ -522,11 +522,11 @@ label:hover {
 }
 
 #contact-info-left {
-    background-image: url("../../assets/img/contact_l.png");
+    background-image: url("../assets/img/contact_l.png");
     rotate: 2deg;
 }
 
 #contact-info-right {
-    background-image: url("../../assets/img/contact_r.png");
+    background-image: url("../assets/img/contact_r.png");
     rotate: -3deg;
 }

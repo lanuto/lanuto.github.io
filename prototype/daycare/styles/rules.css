@@ -101,7 +101,7 @@ ul, ol {
         "d a b"
         "z e y";*/
     width: 200vw;
-    height: 200vh;
+    height: 300vh;
 
 /*    background-image: url("../../assets/img/bg.png");
     background-position: center;
@@ -109,14 +109,18 @@ ul, ol {
 /*    background-position: center;*/
 }
 
-#welcome    { /*grid-area: a;*/top:   0;   left:   0;   }
-#who-we-are { /*grid-area: b;*/top:   0;   left: 100vw; }
-#programs   { /*grid-area: c;*/top: 100vh; left:   0;   }
-#services   {
-/*    grid-area: d;*/
-    top: 100vh;
-    left: 100vw;
+#content a {
+    color: #59F;
 }
+
+#content a:hover {
+    color: white;
+}
+
+#welcome    { /*grid-area: a;*/ top:   0;   left:   0;   }
+#who-we-are { /*grid-area: b;*/ top:   0;   left: 100vw; }
+#programs   { /*grid-area: c;*/ top: 100vh; left:   0;   }
+#services   { /*grid-area: d;*/ top: 100vh; left: 100vw; }
 
 /*    background-image: url("../../assets/img/title.svg");
     background-size: 80%;
@@ -126,12 +130,14 @@ ul, ol {
 
 #contact {
 /*    grid-area: d;*/
-    top: 100vh;
-    left: 100vw;
+    top: 200vh;
+    left: 0;
 
     display: flex;
     flex-direction: row;
 }
+
+#admissions { /* grid-area: e;*/ top: 100vh; left: 100vw; }
 
 /*#contact > * {
     width: 50%;

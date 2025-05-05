@@ -1,203 +1,548 @@
+
+:root {
+    --bc: #4C69FF;
+}
+/*
 ::-webkit-scrollbar {
-  width: 7px; }
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F6E392;
+    border-radius: 6px;
+}
 
 ::-webkit-scrollbar-thumb {
-  background-color: blue; }
+    background-color: #F4C84E;
+    border-radius: 6px;
+}*/
 
 @font-face {
-  font-family: RadioCanada;
-  src: url("res/font/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf");
-  font-family: Arvo;
-  src: url("res/font/Arvo/Arvo-Regular.ttf"); }
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden; }
-  html body {
+    font-family: "Jua";
+    src: url("../assets/font/Jua/Jua-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Funnel";
+    src: url("../assets/font/Funnel_Sans/FunnelSans-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: "Teko";
+    src: url("../assets/font/Teko/Teko-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+* {
     margin: 0;
     padding: 0;
-    font-family: RadioCanada, sans-serif;
-    background-image: url("res/great_wave.jpeg");
-    background-size: cover;
+}
+
+html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: hidden; }
-    html body a {
-      color: inherit;
-      text-decoration: inherit;
-      cursor: pointer; }
-    html body li {
-      list-style: none; }
-    html body img {
-      max-width: 100%; }
-    html body p, html body li {
-      font-size: 1.5em; }
-    html body h1 {
-      border-bottom: 2px solid #05A; }
-    html body form * {
-      min-width: 60%;
-      outline: 1px solid #05A;
-      font-size: 1em;
-      font-family: "Arvo", monospace;
-      border: none;
-      padding: none;
-      margin-left: 10px; }
-    html body form label {
-      outline: none;
-      text-decoration: underline;
-      display: inline-block; }
-    html body form input, html body form textarea {
-      margin-bottom: 10px; }
-    html body form input {
-      display: block; }
-    html body form textarea {
-      resize: none;
-      width: 80%;
-      height: 20vh;
-      font-size: 1em; }
-    html body form input[type=submit] {
-      background-color: black;
-      color: white;
-      width: 100px;
-      min-width: 0;
-      outline: 2px solid #05A; }
-    html body form input[type=submit]:hover {
-      background-color: white;
-      cursor: pointer;
-      color: black; }
-    html body .emscripten {
-      position: fixed;
-      top: 0;
-      z-index: -10; }
-    html body canvas.emscripten {
-      width: 100vw;
-      height: 100vh; }
-    html body #status {
-      display: none; }
-    html body #spinner {
-      display: none; }
-    html body #menu {
-      display: flex;
-      flex-direction: row;
-      height: 5vh;
-      top: 95vh;
-      text-align: center;
-      position: fixed;
-      width: 100vw;
-      outline: 1px solid black;
-      font-family: "Arvo", monospace;
-      font-size: 1.2em;
-      background-color: #323cc8; }
-      html body #menu #links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%; }
-      html body #menu #hamburger {
-        display: none; }
-      html body #menu a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: black; }
-      html body #menu a:hover {
-        color: white; }
-    html body #main {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 400vw;
-      height: 95vh;
-      font-family: "Arvo", monospace; }
-      html body #main #intro > .island {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        text-shadow: 5px 5px #88e; }
-        html body #main #intro > .island h1 {
-          border: none;
-          font-size: 5vh; }
-      html body #main #about > .island {
-        width: 75vh;
-        height: 75vh; }
-      html body #main #web-design > .island {
-        width: 130vh;
-        height: 80vh; }
-      html body #main #contact > .island {
-        width: 110vh;
-        height: 70vh; }
-      html body #main #arcade > .island {
-        width: 88vh;
-        height: 66vh; }
-      html body #main h1 {
-        font-size: 2.4em;
-        color: #05A; }
-      html body #main .zone {
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        html body #main .zone .island {
-          background-color: white;
-          margin: auto;
-          max-width: 80vw;
-          max-height: 80vh;
-          outline: 2px solid #323c5a;
-          overflow-y: scroll; }
-          html body #main .zone .island li {
-            list-style: square; }
-          html body #main .zone .island img {
-            width: 50%;
-            outline: 2px solid #224;
-            height: auto; }
-        html body #main .zone .island > * {
-          margin: 16px; }
-      html body #main #arcade > .island {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        html body #main #arcade > .island #arcade-grid {
-          width: 55vh;
-          height: 55vh;
-          margin: auto;
-          display: grid;
-          grid-template-columns: 25vh 25vh;
-          grid-template-rows: 25vh 25vh;
-          column-gap: 5vh;
-          row-gap: 5vh; }
-          html body #main #arcade > .island #arcade-grid .arcade-link {
-            filter: grayscale(0); }
-          html body #main #arcade > .island #arcade-grid .arcade-link:hover {
-            filter: grayscale(100%); }
+    overflow: hidden;
+/*    overflow-x: hidden;
+    overflow-y: hidden;*/
+/*    scrollbar-color: yellow;*/
+}
 
-@media screen and (max-width: 600px) {
-  html body #menu {
+body {
+    font-family: "Jua", sans-serif;
+    background-color: #FFF8BB;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+ul, ol {
+    padding-left: 2em;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: calc(150vh / 9 * 16);
+    height: 150vh;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#content {
+/*    width: 60vw;*/
+/*    width: 500vw;
+    height: 94vh;*/
+/*    margin-top: 6vh;*/
+
+/*    color: #135;*/
+    color: #04B;
+
+/*    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    grid-template-columns: 100vw 100vw;
+    grid-template-rows: 100vh 100vh;*/
+
+/*    grid-template-areas:
+        "w c x"
+        "d a b"
+        "z e y";*/
+    width: 300vw;
+    height: 200vh;
+
+/*    background-image: url("../../assets/img/bg.png");
+    background-position: center;
+    background-attachment: fixed;*/
+/*    background-position: center;*/
+}
+
+#content a {
+    color: #59F;
+}
+
+#content a:hover {
+    color: white;
+}
+
+#welcome    { /*grid-area: a;*/ top:   0;   left:   0;   }
+#who-we-are { /*grid-area: b;*/ top: 100vh; left:   0;   }
+#programs   { /*grid-area: c;*/ top:   0;   left: 100vw;   display: flex; flex-direction: row; }
+#faq        { /*grid-area: d;*/ top: 100vh; left: 100vw; }
+#admissions { /*grid-area: e;*/ top:   0;   left: 200vw; }
+#contact    { /*grid-area: d;*/ top: 100vh; left: 200vw;   display: flex; flex-direction: row; }
+
+#programs .page-segment, #who-we-are .page-segment {
+    width: 50%;
+/*    display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: 5vh;
-    top: 95vh; }
-    html body #menu #hamburger {
-      display: block;
-      height: 4vh; }
-    html body #menu #links {
-      display: none;
-      flex-direction: column; }
-    html body #menu a {
-      margin-left: 14%;
-      margin-right: 14%; }
-  html body #main h1 {
-    font-size: 2.0em; }
-  html body #main #intro > .island h1 {
-    font-size: 4.8vh; }
-  html body #main .zone {
-    justify-content: flex-start !important; }
-    html body #main .zone .island {
-      width: calc(100% - 10px) !important;
-      height: calc(75% - 10px) !important;
-      margin: calc((100vh - (75% - 10px)) - 50vh) auto;
-      box-shadow: none !important;
-      transition: 0.4s; } }
+    height: 93%;*/
+}
 
-/*# sourceMappingURL=rules.css.map */
+/*#contact > * {
+    width: 50%;
+    height: 100%;
+}*/
+
+/*#contact > * {
+    width: 50%;
+}*/
+
+
+.zone {
+    width: 100vw;
+    height: 100vh;
+/*    outline: 2px solid blue;*/
+    padding-top: 9vh;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+/*    align-items: center;*/
+
+    overflow-x: hidden;
+/*    overflow-y: scroll;*/
+}
+
+/*.zone:first-child {
+    margin-top: 6vh;
+}*/
+
+.page-segment {
+/*    margin-bottom: 10vh;*/
+/*    margin-top: 6vh;*/
+/*    width: 60vw;*/
+/*    margin-left: 20vw;*/
+    margin: 0 4vw;
+/*    display: flex;*/
+/*    flex-direction: column;
+    justify-content: space-evenly;*/
+/*    outline: 4px solid #777;*/
+}
+
+.page-row {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    justify-content: space-evenly;
+}
+
+/*#title {
+    color: green;
+}*/
+/*
+#title span:nth-child(5n) {
+    color: red;
+}
+
+#title span:nth-child(5n+1) {
+    color: yellow;
+}
+
+#title span:nth-child(5n+2) {
+    color: green;
+}
+
+#title span:nth-child(5n+3) {
+    color: blue;
+}
+
+#title span:nth-child(5n+4) {
+    color: magenta;
+}
+*/
+#main-menu {
+/*    font-family: "Teko", sans-serif;*/
+/*    font-family: "Funnel", sans-serif;*/
+    display: flex;
+/*    border-radius: 15px;*/
+    background-color: #4842FF;
+/*    outline: 6px solid #27C; */
+    width: 100vw;
+    height: 7vh;
+    
+    position: fixed;
+    top: 0;
+/*    left: 0;*/
+/*    top: -15px;*/
+/*    margin-top: 4vh;*/
+/*    clip-path: polygon(0 16%, 100% 9%, 88% 84%, 7% 75%);*/
+/*    clip-path: inset(16% 30% 4% 7% round 10%);*/
+/*    background-image: url("../assets/img/test.jpg");*/
+/*    background-size: cover;*/
+
+    font-size: 2em;
+
+    outline: 4px solid #DEF;
+
+    z-index: 50;
+    color: white;
+}
+
+#main-menu > * {
+    width: 100%;
+/*    height: 10vh;*/
+    text-align: center;
+}
+
+#hamburger {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+/*    text-align: center;*/
+    align-items: center;
+    font-size: 0.85em;
+}
+
+#links a {
+    display: inline-block;
+/*    width: 50px;*/
+/*    background-color: red;*/
+}
+
+#l1:hover { color: #FA6; }
+#l2:hover { color: #FC4; }
+#l3:hover { color: #FF2; }
+#l4:hover { color: #9F9; }
+#l5:hover { color: #8FF; }
+#l6:hover { color: #DAF; }
+
+/*
+#l2 { rotate: -3.5deg; }
+#l3 { rotate: -1.3deg; }
+#l1 { rotate:  0.4deg; }
+#l4 { rotate: -3.5deg; }
+#l5 { rotate:  1.5deg; }
+*/
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p, li {
+    font-size: 1.4em;
+}
+
+#top {
+    height: 100%;
+/*    margin-top: calc(10vh - 15px); /* must be same as top menu */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo {
+    max-width: 60vw;
+    width: 570px;
+/*    height: 200px;*/
+    margin: auto;
+/*    border: 4px solid #FA7;*/
+/*    outline: 4px solid #F51;*/
+
+/*    border: 50px solid transparent;*/
+/*    border-image: url("../assets/img/send.png") 30 stretch;*/
+/*    border-image: url("../assets/img/border1.png") 200 stretch;*/
+}
+
+#rg1 { rotate:  1.6deg; }
+#rg2 { rotate: -0.9deg; }
+#rg3 { rotate:  2.1deg; }
+
+#rooms-grid {
+    display: flex;
+    flex-direction: row;
+/*    justify-content: space-evenly;*/
+/*justify-content: space-around;*/
+    justify-content: space-between;
+}
+
+#rooms-grid > div {
+    background-color: #7FD;
+    border-radius: 10px;
+    width: 18vw;
+    height: 12vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.activities-grid {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+/*    background-color: red;*/
+    justify-content: center;
+}
+
+.paint-img {
+/*  width: 30%;
+    height: 24vw;
+*/  
+/*    width: 27vw;
+    height: 18vw;
+*/
+/*    width: 50%;*/
+/*    width: 36vw;
+    height: 24vw;
+*/
+    width: 21vw;
+    height: 14vw;
+/*    width: 18vw;
+    height: 12vw;
+*/
+/*    margin: 1vw;*/
+/*    background-color: #9CE;*/
+    font-size: 2em;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: 100% 100%;
+}
+
+.paint-img img {
+    width: 71.4%;
+    border-radius: 10px;
+    margin: auto;
+
+/*    outline: 4px solid #EF4F36;*/
+}
+
+.paint-img-2, .paint-img-3 {
+    height: 30vh;
+}
+
+/*.paint-img-2 {
+    width: 15vw;
+}
+
+.paint-img-3 {
+    width: 40vw;
+}*/
+
+#pic-room-1 { rotate: -0.7deg; }
+#pic-room-2 { rotate:  1.2deg; }
+#pic-room-3 { rotate: -0.8deg; }
+
+#activities-grid-p1 { rotate: -2.5deg; background-image: url("../assets/img/pbg1.png"); }
+#activities-grid-p2 { rotate:  1.1deg; background-image: url("../assets/img/pbg2.png"); }
+#activities-grid-p3 { rotate:  5.0deg; background-image: url("../assets/img/pbg3.png"); }
+#activities-grid-p4 { rotate: -1.2deg; background-image: url("../assets/img/pbg4.png"); }
+
+#founder-photo {
+/*    width: 40vw;*/
+    width: 42vw;
+    height: 28vw;
+    background-image: url("../assets/img/founder.png");
+}
+/*#activities-grid-p1 { rotate: -2deg; }
+#activities-grid-p1 { rotate: -1deg; }
+*/
+
+#service-table {
+    width: 100%;
+    text-align: left;
+    font-size: 1.4em;
+}
+
+#contact-form-area {
+    width: 70%;
+}
+
+#contact-form-area {
+    margin: 0 10%;
+}
+
+/*#toggle-form {
+    display: none;
+}*/
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    /*
+    background-color: #5A7;
+    border-radius: 10px;
+    */
+
+    justify-content: center;
+}
+
+#contact-form > * {
+    /* cant you just use flex-center? */
+/*    margin-left: 20%;
+    margin-right: 20%;*/
+/*    width: 50%;*/
+}
+
+input {
+}
+
+input[type=submit] {
+    font-family: "Jua", sans-serif;
+/*    width: 5vw;
+    height: 3vw;*/
+    width: 100px;
+    height: 60px;
+    background-image: url("../assets/img/send.png");
+    background-size: cover;
+    background-position: center;
+/*    outline: none;*/
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #8AF;
+}
+
+input, textarea {
+    font-family: "Funnel";
+    border: none;
+/*    font-family: "Jua"; /* Good idea? */
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    padding: 2px;
+/*    border-radius: 2px;*/
+
+/*    outline: 2px solid white;*/
+    border: 2px solid transparent;
+    border-image: url("../assets/img/border2.png") 30 stretch;
+/*    border-image: url("../assets/img/border1.png") 200 stretch;*/
+
+    background-color: #8AD;
+    transition: background-color 0.4s;
+    color: #002;
+}
+
+input:focus, textarea:focus {
+    background-color: #AFF;
+/*    color: white;*/
+}
+
+textarea {
+    resize: none;
+    height: 28vh;
+}
+
+label {
+    font-size: 1.6em;
+}
+
+label:hover {
+    cursor: text;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65vh;
+}
+
+#contact-info > div {
+    width: 35vh;
+    height: 35vh;
+    font-size: 0.8em;
+
+/*    background-color: #4D9;*/
+/*    background-color: white;*/
+/*    border-radius: 2px;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-size: 100%;
+
+/*    outline: 5px solid var(--bc);*/
+}
+
+#contact-info-left {
+    background-image: url("../assets/img/contact_l.png");
+    rotate: 2deg;
+}
+
+#contact-info-right {
+    background-image: url("../assets/img/contact_r.png");
+    rotate: -3deg;
+}

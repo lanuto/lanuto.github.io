@@ -1,0 +1,345 @@
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+// ::-webkit-scrollbar-track {
+// 	background-color: red;
+// }
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+@font-face {
+    font-family: RadioCanada;
+    src: url("res/font/Radio_Canada/RadioCanada-VariableFont_wdth,wght.ttf");
+    font-family: Arvo;
+    src: url("res/font/Arvo/Arvo-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+
+    body {
+        margin: 0;
+        padding: 0;
+        
+        font-family: RadioCanada, sans-serif;
+        // background-color: rgb(200, 225, 255);
+        background-image: url("res/great_wave.jpeg");
+        background-size: cover;
+
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p, li {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            border-bottom: 2px solid #05A;
+        }
+
+        form {
+            // background-color: red;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: left;
+
+            * {
+                // z-index: 1000;
+                min-width: 60%;
+                outline: 1px solid #05A;
+                font-size: 1em;
+                font-family: "Arvo", monospace;
+                border: none;
+                padding: none;
+                margin-left: 10px;
+            }
+
+            label {
+                outline: none;
+                text-decoration: underline;
+                // margin-top: 10px;
+                display: inline-block;
+            }
+
+            input, textarea {
+                margin-bottom: 10px;
+            }
+
+            input {
+                display: block;
+                // outline: 
+            }
+
+            textarea {
+                resize: none;
+                width: 80%;
+                height: 20vh;
+                font-size: 1em;;
+            }
+
+            input[type=submit] {
+                background-color: black;
+                color: white;
+                width: 100px;
+                min-width: 0;
+                outline: 2px solid #05A;
+            }
+            
+            input[type=submit]:hover {
+                background-color: white;
+                cursor: pointer;
+                // outline: 2px solid white;
+                color: black;
+            }
+        }
+
+        .emscripten {
+            position: fixed;
+            top: 0;
+            z-index: -10;
+        }
+
+        canvas.emscripten {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #status  { display: none; }
+        #spinner { display: none; }
+
+        #menu {
+            display: flex;
+            flex-direction: row;
+            height: 5vh;
+            top: 95vh;
+            text-align: center;
+
+            position: fixed;
+            width: 100vw;
+            outline: 1px solid black;
+            // height: 100%;
+
+            font-family: "Arvo", monospace;
+            font-size: 1.2em;
+
+            background-color: rgb(50, 60, 200);
+
+            #links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+
+            #hamburger {
+                display: none;
+            }
+
+            a {
+                //width: 100%;
+                //border: 2px solid grey;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                color: black;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 400vw;
+            height: 95vh;
+            font-family: "Arvo", monospace;
+
+            #intro > .island {
+                width: 50%;
+                height: 50%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                text-shadow: 5px 5px #88e;
+
+                // overflow-y: hidden !important;
+
+                h1 {
+                    border: none;
+                    font-size: 5vh;
+                }
+            }
+            
+            #about > .island {
+                width: 75vh;
+                height: 75vh;
+            }
+
+            #web-design > .island {
+                width: 130vh;
+                height: 80vh;
+            }
+
+            #contact > .island {
+                width: 110vh;
+                height: 70vh;
+            }
+
+            #arcade > .island {
+                width: 88vh;
+                height: 66vh;
+            }
+
+            h1 {
+                font-size: 2.4em;
+                color: #05A;
+            }
+
+            .zone {
+                width: 100vw;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // background-color: green;
+
+                .island {
+                    background-color: white;
+                    margin: auto;
+
+                    max-width: 80vw;
+                    max-height: 80vh;
+
+                    outline: 2px solid rgb(50, 60, 90);
+
+                    overflow-y: scroll;
+
+                    li {
+                        list-style: square;
+                        // list-style: trad-chinese-informal;
+                    }
+
+                    img {
+                        width: 50%;
+                        outline: 2px solid #224;
+                        height: auto;
+                    }
+                }
+
+                .island > * {
+                    margin: 16px;
+                }
+            }
+
+            #arcade > .island {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                #arcade-grid {
+                    width: 55vh;
+                    height: 55vh;
+                    margin: auto;
+
+                    display: grid;
+                    grid-template-columns: 25vh 25vh;
+                    grid-template-rows: 25vh 25vh;
+                    column-gap: 5vh;
+                    row-gap: 5vh;
+                    
+                    .arcade-link {
+                        filter: grayscale(0);
+                    }
+
+                    .arcade-link:hover {
+                        filter: grayscale(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Laptop
+@media screen and (min-width: 992px) {}
+
+// Phone/Tablet
+@media screen and (max-width: 600px) {
+html {
+    body {
+        #menu {
+            flex-direction: column;
+            height: 5vh;
+            top: 95vh;
+
+            #hamburger {
+                display: block;
+                height:4vh;
+            }
+
+            #links {
+                display: none;
+                flex-direction: column;
+            }
+
+            a {
+                margin-left: 14%;
+                margin-right: 14%;
+            }
+        }
+
+        #main {
+            h1 {
+                font-size: 2.0em;
+            }
+
+            #intro > .island h1 {
+                font-size: 4.8vh;
+            }
+
+            .zone {
+                justify-content: flex-start !important;
+                
+                .island {
+                    width: calc(100% - 10px) !important;
+                    height: calc(75% - 10px) !important;
+                    // margin: 5px auto;
+                    margin: calc((100vh - (75% - 10px)) - 50vh) auto;
+
+                    box-shadow: none !important;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}
+}

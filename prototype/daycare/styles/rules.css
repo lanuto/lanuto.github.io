@@ -119,17 +119,21 @@ ul, ol {
 
 #welcome    { /*grid-area: a;*/ top:   0;   left:   0;   }
 #who-we-are { /*grid-area: b;*/ top: 100vh; left:   0;   }
-#programs   { /*grid-area: c;*/ top:   0;   left: 100vw;   display: flex; flex-direction: row; }
-#faq        { /*grid-area: d;*/ top: 100vh; left: 100vw; }
-#admissions { /*grid-area: e;*/ top:   0;   left: 200vw; }
-#contact    { /*grid-area: d;*/ top: 100vh; left: 200vw;   display: flex; flex-direction: row; }
+#services   { /*grid-area: c;*/ top:   0;   left: 100vw;   display: flex; flex-direction: row; }
+#admissions { /*grid-area: e;*/ top: 100vh; left: 100vw; }
+#contact    { /*grid-area: d;*/ top:   0;   left: 200vw;   display: flex; flex-direction: row; }
 
-#programs .page-segment, #who-we-are .page-segment {
+#services .page-segment, #who-we-are .page-segment, #admissions .page-segment {
     width: 50%;
 /*    display: flex;
     justify-content: center;
     flex-direction: column;
     height: 93%;*/
+}
+
+#middle {
+/*    width: 1%;*/
+    border-right: 2px solid #04B;
 }
 
 /*#contact > * {
@@ -141,6 +145,9 @@ ul, ol {
     width: 50%;
 }*/
 
+#admissions .faq {
+    font-size: 1em;
+}
 
 .zone {
     width: 100vw;
@@ -386,7 +393,7 @@ p, li {
 }
 
 .paint-img-2, .paint-img-3 {
-    height: 30vh;
+    height: 20vh;
 }
 
 /*.paint-img-2 {
@@ -420,6 +427,10 @@ p, li {
     width: 100%;
     text-align: left;
     font-size: 1.4em;
+}
+
+#service-table td {
+    border-top: 2px solid #04B;;
 }
 
 #contact-form-area {

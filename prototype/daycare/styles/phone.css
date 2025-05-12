@@ -145,11 +145,11 @@ html {
     height: 7vh;
 }
 
-#programs {
+#services {
     flex-direction: column;
 }
 
-#who-we-are .page-segment, #programs .page-segment {
+#who-we-are .page-segment, #services .page-segment {
     width: 100%;
 }
 

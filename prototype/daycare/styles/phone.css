@@ -149,7 +149,7 @@ html {
     flex-direction: column;
 }
 
-#who-we-are .page-segment, #services .page-segment {
+#who-we-are .page-segment, #services .page-segment, #admissions .page-segment {
     width: 100%;
 }
 

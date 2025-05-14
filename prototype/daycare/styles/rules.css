@@ -323,7 +323,8 @@ p, li {
 /*    border-image: url("../assets/img/border1.png") 200 stretch;*/
     background-image: url("../assets/img/whirlsheet.png");
 /*    background-size: cover;*/
-background-repeat: no-repeat;
+/*    background-size: 10% 100%;*/
+    background-repeat: no-repeat;
 }
 
 /*#logo img {

@@ -34,6 +34,8 @@ function deviceTurned() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
+let whirlWidth;
+
 function setup() {
     // createCanvas(window.width);
     canvas = createCanvas(windowWidth, windowHeight);
@@ -51,10 +53,12 @@ function setup() {
         splatterCount = 50;
         // offset = 300;
         // nh = height * 0.93;
+        whirlWidth = 570;
     } else {
         splatterCount = 14;
         // offset = 150;
         // nh = height;
+        whirlWidth = 380;
     }
     for (let i = 0; i < splatterCount; i++) {
         // points[i] = createVector(random(0, width), random(0, height));
@@ -81,7 +85,7 @@ let op = 0.0;
 function draw() {
     const logo = document.getElementById("logo");
     logo.style.opacity = op;
-    logo.style.backgroundPosition = (index * -570) + "px 0px";
+    logo.style.backgroundPosition = (index * -whirlWidth) + "px 0px";
 
     if (frame % 2 == 0 && index < 9) {
         index++;

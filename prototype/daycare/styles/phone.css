@@ -141,6 +141,12 @@ html {
 /*    font-size: 0.5em;*/
 }
 
+#logo {
+    width: 380px;
+    height: 289px;
+    background-image: url("../assets/img/whirlsheet_phone.png");
+}
+
 .middle {
     display: none;
 }

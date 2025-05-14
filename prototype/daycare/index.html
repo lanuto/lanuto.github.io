@@ -41,7 +41,7 @@
     <div id="content">
         <div class="zone" id="welcome">
             <section id="top" class="page-segment">
-                <img src="assets/img/logo.png" id="logo">
+                <div id="logo"></div>
     <!--             <picture id="logo">
                     <source srcset="assets/img/logo2.webp" type="image/webp">
                     <source srcset="assets/img/logo2.png" type="image/png">
@@ -65,6 +65,7 @@
                     <img src="assets/img/photos/3.png" alt="Picture of Shardae Hepburn">
                 </div>
             </section>
+            <section class="middle"></section>
             <section class="page-segment">
                 <h3>Mission Statement</h3>
                 <p>
@@ -178,7 +179,7 @@
                     <!-- <img id="pic-room-3" class="paint-img-3" src="assets/img/pd3.png" alt=""> -->
                 </section>
             </section>
-            <section id="middle"></section>
+            <section class="middle"></section>
             <section class="page-segment">
                 <h3>FAQ</h3>
                 <br>
@@ -255,6 +256,23 @@
     window.onorientationchange = function() {
         window.location.reload();
     }
+
+    // const logo = document.getElementById("logo");
+    // let ii = 0;
+
+    // setInterval(function () {
+    //     // logo[ii].style.visibility = "hidden";
+
+    //     // if (ii + 1 < logo.length) {
+    //     //     ii++;
+    //     // }
+
+    //     logo.style.backgroundPosition = (ii * -570) + "px 0px";
+
+    //     if (ii < 10) {
+    //         ii++;
+    //     }
+    // }, 100);
 
     const links     = document.getElementById("links");
     const hamburger = document.getElementById("hamburger");

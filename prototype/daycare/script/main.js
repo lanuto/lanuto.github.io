@@ -74,7 +74,24 @@ function mouseReleased() {
     splatterCount++;
 }
 
+let index = 0;
+let frame = 0;
+let op = 0.0;
+
 function draw() {
+    const logo = document.getElementById("logo");
+    logo.style.opacity = op;
+    logo.style.backgroundPosition = (index * -570) + "px 0px";
+
+    if (frame % 2 == 0 && index < 9) {
+        index++;
+    }
+
+    if (op < 1.0) {
+        op += 0.02;
+    }
+    frame++;
+
     // clear(); // warning, may remove <img> bg
     background(255, 249, 187);
     // image(bg, 0, 0);

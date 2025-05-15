@@ -80,6 +80,10 @@ ul, ol {
     min-height: 100%;
 }
 
+#content, #thanks {
+    color: #04B;
+}
+
 #content {
 /*    width: 60vw;*/
 /*    width: 500vw;
@@ -87,7 +91,6 @@ ul, ol {
 /*    margin-top: 6vh;*/
 
 /*    color: #135;*/
-    color: #04B;
 
 /*    display: grid;
     grid-template-areas:
@@ -109,12 +112,30 @@ ul, ol {
 /*    background-position: center;*/
 }
 
-#content a {
+#content a, #thanks a {
     color: #59F;
 }
 
-#content a:hover {
+#content a:hover, #thanks a:hover {
     color: white;
+}
+
+#thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+/*    color: #58D;*/
+    background-color: #8DF;
+
+    font-size: 4em;
 }
 
 #welcome    { /*grid-area: a;*/ top:   0;   left:   0;   }
@@ -299,6 +320,10 @@ p, li {
     font-size: 1.4em;
 }
 
+table {
+    border-spacing: 0;
+}
+
 #top {
     height: 100%;
 /*    margin-top: calc(10vh - 15px); /* must be same as top menu */
@@ -441,7 +466,7 @@ p, li {
 }
 
 #service-table td {
-    border-top: 2px solid #04B;;
+    border-top: 2px solid #04B;
 }
 
 #contact-form-area {
@@ -505,10 +530,13 @@ input, textarea {
     padding: 2px;
 /*    border-radius: 2px;*/
 
-/*    outline: 2px solid white;*/
+/*
+    Alternate:
     border: 2px solid transparent;
     border-image: url("../assets/img/border2.png") 30 stretch;
-/*    border-image: url("../assets/img/border1.png") 200 stretch;*/
+*/
+    border: 2px solid #04B;
+
 
     background-color: #8AD;
     transition: background-color 0.4s;

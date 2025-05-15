@@ -103,7 +103,7 @@
                 </p>
                 <br>
                 <table id="service-table">
-                    <tr>
+                    <tr class="table-header">
                         <th>Service</th>
                         <th>Who it's for</th>
                     </tr>
@@ -208,10 +208,12 @@
         <div class="zone" id="contact">
             <section id="contact-form-area">
                 <h3>Reach Out to Us</h3>
-                <form id="contact-form" action="..." method="POST">
-                    <input type="hidden" name="access_key" value="...">
-                    <input type="hidden" name="from_name" value="...">
+                <!-- <form id="contact-form" action="email.php" method="POST"> -->
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a06960ff-e286-4c0e-bc76-0d92913b3264">
+                    <input type="hidden" name="from_name" value="Daycare Website">
                     <input type="checkbox" name="botcheck" style="display: none">
+                    <input type="hidden" name="redirect" value="https://lanuto.github.io/prototype/daycare/thanks.html">
 
                     <label>Name</label>
                     <input type="text" name="name" required>

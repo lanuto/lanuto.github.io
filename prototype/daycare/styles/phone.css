@@ -1,6 +1,6 @@
 
-/*@media screen and (max-width: 1080px) {*/
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1080px) {
+/*@media screen and (max-width: 1280px) {*/
 html {
 /*    scroll-behavior: auto;*/
     overflow-x: hidden;
@@ -59,6 +59,12 @@ html {
     flex-direction: column-reverse;
 }
 */
+
+.activities-grid .paint-img {
+    width: 42vw;
+    height: 28vw;
+}
+
 #rooms-grid {
 /*    flex-direction: column;*/
     justify-content: space-between;

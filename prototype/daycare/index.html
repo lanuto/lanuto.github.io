@@ -103,8 +103,6 @@
             </section>
  -->        
         </div>
-        <div class="zone" id="faq">
-        </div>
         <div class="zone" id="admissions">
             <section class="page-segment">
                 <h3>Admissions</h3>
@@ -216,16 +214,9 @@
 
 <script>
     window.onload = function() {
-        const redirectInput = document.getElementsByName("redirect")[0];
-
         const websiteAddr = window.location.origin + window.location.pathname;
-
-        // Likely isn't needed, but let's be safe
-        if (websiteAddr.slice(-1) === "/") {
-            redirectInput.value = websiteAddr + "thanks.html";
-        } else {
-            redirectInput.value = websiteAddr + "/thanks.html";
-        }
+        
+        document.getElementsByName("redirect")[0].value = websiteAddr.substring(0, websiteAddr.lastIndexOf("/")) + "/" + "thanks.html";
     }
 
     window.onorientationchange = function() {

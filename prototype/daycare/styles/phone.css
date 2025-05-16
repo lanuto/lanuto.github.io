@@ -1,5 +1,6 @@
 
-@media screen and (max-width: 1080px) {
+/*@media screen and (max-width: 1080px) {*/
+@media screen and (max-width: 1280px) {
 html {
 /*    scroll-behavior: auto;*/
     overflow-x: hidden;
@@ -7,25 +8,22 @@ html {
 }
 
 #content {
-/*    width: 96vw;
-    margin: 0 2vw;*/
-/*    display: flex;*/
-/*    flex-direction: row;
-    width: 500vw;*/
     display: block;
     width: 100vw;
     height: auto;
     margin: 0;
 }
 
+#services {
+    align-items: initial;
+}
+
 .zone {
     width: 100vw;
-/*    height: 90vh;*/
     height: auto;
     margin-top: 10vh;
-/*    background-color: red;;*/
     display: block;
-    overflow-y: auto;
+/*  overflow-y: auto;*/
 
     position: static;
 }
@@ -40,6 +38,10 @@ html {
 .page-row {
     flex-direction: column;
     height: auto;
+}
+
+#who-we-are .page-segment, #services .page-segment, #admissions .page-segment {
+    width: 100%;
 }
 
 #top {
@@ -161,10 +163,6 @@ html {
 
 #services {
     flex-direction: column;
-}
-
-#who-we-are .page-segment, #services .page-segment, #admissions .page-segment {
-    width: 100%;
 }
 
 .paint-img {

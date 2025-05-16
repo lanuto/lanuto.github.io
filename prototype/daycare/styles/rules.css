@@ -56,6 +56,22 @@ body {
     background-color: #FFF8BB;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p, li {
+    font-size: 1.4em;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -67,6 +83,10 @@ a:hover {
 
 ul, ol {
     padding-left: 2em;
+}
+
+table {
+    border-spacing: 0;
 }
 
 #bg {
@@ -85,31 +105,9 @@ ul, ol {
 }
 
 #content {
-/*    width: 60vw;*/
-/*    width: 500vw;
-    height: 94vh;*/
-/*    margin-top: 6vh;*/
-
-/*    color: #135;*/
-
-/*    display: grid;
-    grid-template-areas:
-        "a b"
-        "c d";
-    grid-template-columns: 100vw 100vw;
-    grid-template-rows: 100vh 100vh;*/
-
-/*    grid-template-areas:
-        "w c x"
-        "d a b"
-        "z e y";*/
+/*  display: grid; */
     width: 300vw;
     height: 200vh;
-
-/*    background-image: url("../../assets/img/bg.png");
-    background-position: center;
-    background-attachment: fixed;*/
-/*    background-position: center;*/
 }
 
 #content a, #thanks a {
@@ -132,39 +130,27 @@ ul, ol {
     width: 100vw;
     height: 100vh;
 
-/*    color: #58D;*/
+/*  color: #58D;*/
     background-color: #8DF;
 
     font-size: 4em;
 }
 
-#welcome    { /*grid-area: a;*/ top:   0;   left:   0;   }
-#who-we-are { /*grid-area: b;*/ top: 100vh; left:   0;   }
-#services   { /*grid-area: c;*/ top:   0;   left: 100vw;   display: flex; flex-direction: row; }
-#admissions { /*grid-area: e;*/ top: 100vh; left: 100vw; }
-#contact    { /*grid-area: d;*/ top:   0;   left: 200vw;   display: flex; flex-direction: row; }
+#welcome    { top:   0;   left:   0;   }
+#who-we-are { top: 100vh; left:   0;   }
+#services   { top:   0;   left: 100vw;   display: flex; flex-direction: row; align-items: center; }
+#admissions { top: 100vh; left: 100vw; }
+#contact    { top:   0;   left: 200vw;   display: flex; flex-direction: row; }
 
 #services .page-segment, #who-we-are .page-segment, #admissions .page-segment {
     width: 50%;
-/*    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 93%;*/
 }
 
 .middle {
-/*    width: 1%;*/
+/*  width: 1%; */
     border-right: 2px solid #04B;
+    height: 85%;
 }
-
-/*#contact > * {
-    width: 50%;
-    height: 100%;
-}*/
-
-/*#contact > * {
-    width: 50%;
-}*/
 
 #admissions .faq {
     font-size: 1em;
@@ -173,7 +159,6 @@ ul, ol {
 .zone {
     width: 100vw;
     height: 100vh;
-/*    outline: 2px solid blue;*/
     padding-top: 9vh;
 
     position: absolute;
@@ -181,26 +166,14 @@ ul, ol {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-/*    align-items: center;*/
+/*  align-items: center; */
 
     overflow-x: hidden;
-/*    overflow-y: scroll;*/
+/*  overflow-y: scroll; */
 }
 
-/*.zone:first-child {
-    margin-top: 6vh;
-}*/
-
 .page-segment {
-/*    margin-bottom: 10vh;*/
-/*    margin-top: 6vh;*/
-/*    width: 60vw;*/
-/*    margin-left: 20vw;*/
     margin: 0 4vw;
-/*    display: flex;*/
-/*    flex-direction: column;
-    justify-content: space-evenly;*/
-/*    outline: 4px solid #777;*/
 }
 
 .page-row {
@@ -210,49 +183,15 @@ ul, ol {
     justify-content: space-evenly;
 }
 
-/*#title {
-    color: green;
-}*/
-/*
-#title span:nth-child(5n) {
-    color: red;
-}
-
-#title span:nth-child(5n+1) {
-    color: yellow;
-}
-
-#title span:nth-child(5n+2) {
-    color: green;
-}
-
-#title span:nth-child(5n+3) {
-    color: blue;
-}
-
-#title span:nth-child(5n+4) {
-    color: magenta;
-}
-*/
 #main-menu {
-/*    font-family: "Teko", sans-serif;*/
-/*    font-family: "Funnel", sans-serif;*/
     display: flex;
-/*    border-radius: 15px;*/
     background-color: #4842FF;
-/*    outline: 6px solid #27C; */
+
     width: 100vw;
     height: 7vh;
     
     position: fixed;
     top: 0;
-/*    left: 0;*/
-/*    top: -15px;*/
-/*    margin-top: 4vh;*/
-/*    clip-path: polygon(0 16%, 100% 9%, 88% 84%, 7% 75%);*/
-/*    clip-path: inset(16% 30% 4% 7% round 10%);*/
-/*    background-image: url("../assets/img/test.jpg");*/
-/*    background-size: cover;*/
 
     font-size: 2em;
 
@@ -264,7 +203,7 @@ ul, ol {
 
 #main-menu > * {
     width: 100%;
-/*    height: 10vh;*/
+/*  height: 10vh; */
     text-align: center;
 }
 
@@ -278,15 +217,13 @@ ul, ol {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-/*    text-align: center;*/
+/*  text-align: center; */
     align-items: center;
     font-size: 0.85em;
 }
 
 #links a {
     display: inline-block;
-/*    width: 50px;*/
-/*    background-color: red;*/
 }
 
 #l1:hover { color: #FA6; }
@@ -304,29 +241,9 @@ ul, ol {
 #l5 { rotate:  1.5deg; }
 */
 
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-p, li {
-    font-size: 1.4em;
-}
-
-table {
-    border-spacing: 0;
-}
-
 #top {
     height: 100%;
-/*    margin-top: calc(10vh - 15px); /* must be same as top menu */
+/*  margin-top: calc(10vh - 15px); /* must be same as top menu */
 
     display: flex;
     flex-direction: column;
@@ -335,82 +252,33 @@ table {
 }
 
 #logo {
-/*    max-width: 60vw;*/
+/*  max-width: 60vw; */
     width: 570px;
     height: 434px;
     margin: auto;
     opacity: 0;
-/*    border: 4px solid #FA7;*/
-/*    outline: 4px solid #F51;*/
 
-/*    border: 50px solid transparent;*/
-/*    border-image: url("../assets/img/send.png") 30 stretch;*/
-/*    border-image: url("../assets/img/border1.png") 200 stretch;*/
     background-image: url("../assets/img/whirlsheet.png");
-/*    background-size: cover;*/
-/*    background-size: 10% 100%;*/
     background-repeat: no-repeat;
 }
-
-/*#logo img {
-/*    display: none;*/
-    width: 100%;
-    height: 100%;
-}*/
 
 #rg1 { rotate:  1.6deg; }
 #rg2 { rotate: -0.9deg; }
 #rg3 { rotate:  2.1deg; }
-
-#rooms-grid {
-    display: flex;
-    flex-direction: row;
-/*    justify-content: space-evenly;*/
-/*justify-content: space-around;*/
-    justify-content: space-between;
-}
-
-#rooms-grid > div {
-    background-color: #7FD;
-    border-radius: 10px;
-    width: 18vw;
-    height: 12vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
 
 .activities-grid {
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-/*    background-color: red;*/
     justify-content: center;
 }
 
 .paint-img {
-/*  width: 30%;
-    height: 24vw;
-*/  
-/*    width: 27vw;
-    height: 18vw;
-*/
-/*    width: 50%;*/
-/*    width: 36vw;
-    height: 24vw;
-*/
     width: 21vw;
     height: 14vw;
-/*    width: 18vw;
-    height: 12vw;
-*/
-/*    margin: 1vw;*/
-/*    background-color: #9CE;*/
-    font-size: 2em;
 
+    font-size: 2em;
 
     display: flex;
     flex-direction: column;
@@ -424,8 +292,6 @@ table {
     width: 71.4%;
     border-radius: 10px;
     margin: auto;
-
-/*    outline: 4px solid #EF4F36;*/
 }
 
 .paint-img-2, .paint-img-3 {
@@ -455,9 +321,6 @@ table {
     height: 28vw;
     background-image: url("../assets/img/founder.png");
 }
-/*#activities-grid-p1 { rotate: -2deg; }
-#activities-grid-p1 { rotate: -1deg; }
-*/
 
 #service-table {
     width: 100%;
@@ -477,9 +340,6 @@ table {
     margin: 0 10%;
 }
 
-/*#toggle-form {
-    display: none;
-}*/
 
 #contact-form {
     display: flex;
@@ -492,26 +352,15 @@ table {
     justify-content: center;
 }
 
-#contact-form > * {
-    /* cant you just use flex-center? */
-/*    margin-left: 20%;
-    margin-right: 20%;*/
-/*    width: 50%;*/
-}
-
-input {
-}
-
 input[type=submit] {
     font-family: "Jua", sans-serif;
-/*    width: 5vw;
-    height: 3vw;*/
+
     width: 100px;
     height: 60px;
     background-image: url("../assets/img/send.png");
     background-size: cover;
     background-position: center;
-/*    outline: none;*/
+
     color: white;
 }
 
@@ -524,12 +373,10 @@ input[type=submit]:hover {
 input, textarea {
     font-family: "Funnel";
     border: none;
-/*    font-family: "Jua"; /* Good idea? */
+/*  font-family: "Jua"; /* Good idea? */
     font-size: 1.2em;
     margin-bottom: 0.7em;
     padding: 2px;
-/*    border-radius: 2px;*/
-
 /*
     Alternate:
     border: 2px solid transparent;
@@ -545,7 +392,6 @@ input, textarea {
 
 input:focus, textarea:focus {
     background-color: #AFF;
-/*    color: white;*/
 }
 
 textarea {
@@ -573,18 +419,12 @@ label:hover {
     height: 35vh;
     font-size: 0.8em;
 
-/*    background-color: #4D9;*/
-/*    background-color: white;*/
-/*    border-radius: 2px;*/
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
     background-size: 100%;
-
-/*    outline: 5px solid var(--bc);*/
 }
 
 #contact-info-left {

@@ -217,7 +217,7 @@
 
 <script>
     window.onload = function() {
-        document.getElementsByName("redirect")[0].value = window.location.protocol + "//" + window.location.host + "/thanks.html";
+        document.getElementsByName("redirect")[0].value = window.location.origin + window.location.pathname + "/thanks.html";
     }
 
     window.onorientationchange = function() {

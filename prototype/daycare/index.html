@@ -217,7 +217,16 @@
 
 <script>
     window.onload = function() {
-        document.getElementsByName("redirect")[0].value = window.location.origin + window.location.pathname + "/thanks.html";
+        const redirectInput = document.getElementsByName("redirect")[0];
+
+        const websiteAddr = window.location.origin + window.location.pathname;
+
+        // Likely isn't needed, but let's be safe
+        if (websiteAddr.slice(-1) === "/") {
+            redirectInput.value = websiteAddr + "thanks.html";
+        } else {
+            redirectInput.value = websiteAddr + "/thanks.html";
+        }
     }
 
     window.onorientationchange = function() {

@@ -136,11 +136,31 @@ table {
     font-size: 4em;
 }
 
-#home    { top:   0;   left:   0;   }
+#home       { top:   0;   left:   0;   }
 #who-we-are { top: 100vh; left:   0;   }
 #services   { top:   0;   left: 100vw;   display: flex; flex-direction: row; align-items: center; }
 #admissions { top: 100vh; left: 100vw; }
 #contact    { top:   0;   left: 200vw;   display: flex; flex-direction: row; }
+
+.home-overlay {
+    position: absolute;
+    transition: color 1s, font-size 0.5s;
+
+    text-shadow: 3px 3px #8CF;
+
+    width: 50vw;
+/*    height: 50px;*/
+    text-align: center;
+
+    font-size: 0;
+    color: #FFF0;
+
+/*    background-color: red;*/
+}
+
+#ho-enroll.home-overlay   { top: 20vh; left:  0vw; rotate: -4.1deg }
+#ho-journey.home-overlay  { top: 30vh; left: 40vw; rotate:  4.7deg }
+#ho-learning.home-overlay { top: 85vh; left: 20vw; rotate:  2.7deg }
 
 #services .page-segment, #who-we-are .page-segment, #admissions .page-segment {
     width: 50%;

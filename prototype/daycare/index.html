@@ -35,6 +35,9 @@
                 <div id="logo"></div>
             </section>
         </div>
+        <p class="home-overlay" id="ho-enroll"  >Secure Your Spot – Enroll Today!</p>
+        <p class="home-overlay" id="ho-journey" >Start Your Child’s Journey Today!</p>
+        <p class="home-overlay" id="ho-learning">Join Our Loving Learning Community!</p>
         <div class="zone" id="who-we-are">
             <section class="page-segment">
                 <h3>Meet Our Founder: Shardae Hepburn</h3>
@@ -215,6 +218,12 @@
         const websiteAddr = window.location.origin + window.location.pathname;
 
         document.getElementsByName("redirect")[0].value = websiteAddr.substring(0, websiteAddr.lastIndexOf("/")) + "/" + "thanks.html";
+
+        const enroll = document.getElementsByClassName("home-overlay");
+        for (let i = 0; i < enroll.length; i++) {
+            enroll[i].style.color = "#08FF";
+            enroll[i].style.fontSize = "2em";
+        }
     }
 
     window.onorientationchange = function() {

@@ -159,6 +159,15 @@ html {
     background-image: url("../assets/img/whirlsheet_phone.png");
 }
 
+/*.home-overlay {
+    width: 100vw;
+    height: 50vh;
+}
+*/
+#ho-enroll.home-overlay   { top:  9vh; left:  0vw; rotate: -4.0deg }
+#ho-journey.home-overlay  { top: 48vh; left: 48vw; rotate:  4.9deg }
+#ho-learning.home-overlay { top: 47vh; left:  8vw; rotate: -2.2deg }
+
 .middle {
     display: none;
 }

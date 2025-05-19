@@ -62,6 +62,19 @@ let frame = 0;
 let opacity = 0.0;
 
 function draw() {
+    if (frame == 30) {
+        const enroll = document.getElementsByClassName("home-overlay");
+        for (let i = 0; i < enroll.length; i++) {
+            enroll[i].style.color = "#08FF";
+
+            if (width > 600) {
+                enroll[i].style.fontSize = "2.2em";
+            } else {
+                enroll[i].style.fontSize = "1.8em";
+            }
+        }
+    }
+
     const logo = document.getElementById("logo");
 
     logo.style.opacity = opacity;
@@ -81,7 +94,7 @@ function draw() {
         image(paint, points[i].x - 128, points[i].y - 128, 256, 256, pr[i].x, pr[i].y, 256, 256);
     }
 
-    
+
     if (renderIndex < splatterCount) {
         renderIndex++;
     }

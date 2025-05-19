@@ -85,11 +85,9 @@
                         <td>Before and after care</td>
                         <td>School age</td>
                     </tr>
-                    <tr>
-                        <td>Healthy meals, snacks, and enrichment activities</td>
-                        <td>Everyone</td>
-                    </tr>
                 </table>
+                <br>
+                <p>Healthy meals, snacks, and enrichment activities are provided.</p>
                 <section class="activities-grid">
                     <div class="paint-img" id="activities-grid-p1"><img src="assets/img/photos/1.png" alt="Photo of boy looking upwards."></div>
                     <div class="paint-img" id="activities-grid-p2"><img src="assets/img/photos/2.png" alt="Photo of a girl smiling."></div>
@@ -215,7 +213,7 @@
 <script>
     window.onload = function() {
         const websiteAddr = window.location.origin + window.location.pathname;
-        
+
         document.getElementsByName("redirect")[0].value = websiteAddr.substring(0, websiteAddr.lastIndexOf("/")) + "/" + "thanks.html";
     }
 

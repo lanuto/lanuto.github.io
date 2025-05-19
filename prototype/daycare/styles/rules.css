@@ -136,7 +136,7 @@ table {
     font-size: 4em;
 }
 
-#welcome    { top:   0;   left:   0;   }
+#home    { top:   0;   left:   0;   }
 #who-we-are { top: 100vh; left:   0;   }
 #services   { top:   0;   left: 100vw;   display: flex; flex-direction: row; align-items: center; }
 #admissions { top: 100vh; left: 100vw; }
